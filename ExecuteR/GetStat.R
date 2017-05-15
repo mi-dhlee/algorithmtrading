@@ -14,7 +14,7 @@ URL=paste("http://kosis.kr/openapi/statisticsData.do?method=getList&apiKey=",
 	"=&format=json&jsonVD=Y&userStatsId=",
 	userStatsId,
 	"/301/DT_042Y001/2/1/",apiRkey,"&prdSe=M&newEstPrdCnt=",
-	Cnt)
+	Cnt,sep="")
 	
 Data=fromJSON(paste(readLines(URL,encoding="UTF-8"), collapse=""))
 
