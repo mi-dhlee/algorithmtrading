@@ -5,7 +5,10 @@ eBest open api를 활용한 알고리즘 트레이딩 연습
 
 
 1. 테스트 환경 
--windows 7 -R 3.1.3 
+
+-windows 7 
+
+-R 3.1.3 
 
 -statconnDcom(http://rcom.univie.ac.at/download.html) 
 
