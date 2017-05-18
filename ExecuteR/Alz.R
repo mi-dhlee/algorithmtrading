@@ -329,22 +329,6 @@ RstHit=lapply(RstList,function(x) {
 A=mean(unlist(RstHit))
 print(A)
 
-RstSim=lapply(RstList,function(x) {	
-	A=x[,1]*ifelse(x[,2]>0,1,0)
-	return(A)
-})
-
-RstSimMat=do.call(cbind,RstSim)
-RstSimMatT=apply(as.timeSeries(rowMeans(RstSimMat)),2,cumsum)
-
-baseL=as.timeSeries(rowMeans(return))
-PPa=cbind(baseL,RstSimMatT)
-PPa=PPa[rowSums(is.na(PPa))==0,]
-PPa[,1]=apply(PPa[,1],2,cumsum)
-
-#plot(PPa[,1])
-#lines(PPa[,2],col='red')
-
 #Find Up Value
 RstUp=lapply(RstList,function(x) {	
 	A=as.numeric(x[nrow(x),2])
