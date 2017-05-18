@@ -2,6 +2,7 @@
 
 eBest open api를 활용한 알고리즘 트레이딩 연습
 
+http://htmlpreview.github.io/?https://github.com/mi-dhlee/algorithmtrading/blob/master/output.nb.html
 
 
 1. 테스트 환경 
